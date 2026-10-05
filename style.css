@@ -59,6 +59,8 @@ section {
   padding: 60px 40px;
   overflow-x: auto;
   background-color: #ffffff;
+   /* LevelUp: Scroll Snap */
+  scroll-snap-type: x mandatory;
 }
 /* ========================================
    TIMELINE CARDS
@@ -146,7 +148,8 @@ body > p {
   font-weight: bold;
 }
 
-/* ========================================
+
+  /* ========================================
    MOBILE RESPONSIVE DESIGN
    ======================================== */
 
@@ -171,15 +174,16 @@ body > p {
   /* Stack timeline cards vertically */
   section {
     flex-direction: column;
-
     padding: 40px 20px;
-
     overflow-x: hidden;
+
+    /* Turn off horizontal scroll snap on mobile */
+    scroll-snap-type: none;
   }
 
   section > div {
     width: 100%;
-
     flex: none;
   }
+}
 }
