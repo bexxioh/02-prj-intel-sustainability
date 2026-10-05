@@ -57,19 +57,16 @@ section {
   display: flex;
   gap: 25px;
   padding: 60px 40px;
-
-  /* Allows the timeline to scroll horizontally */
   overflow-x: auto;
-
   background-color: #ffffff;
 }
-
 /* ========================================
    TIMELINE CARDS
    ======================================== */
 
 section > div {
   flex: 0 0 300px;
+  scroll-snap-align: start;
 
   padding: 30px;
 
@@ -80,11 +77,9 @@ section > div {
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
-  /* Smooth hover animation */
   transition: transform 0.3s ease,
               box-shadow 0.3s ease;
 }
-
 /* ========================================
    CARD HOVER EFFECT
    ======================================== */
