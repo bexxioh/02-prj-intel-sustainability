@@ -1,1 +1,108 @@
 /* Add your CSS here */
+/* Basic page setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* HERO SECTION */
+header {
+  background: #0071c5;
+  color: white;
+  text-align: center;
+  padding: 80px 30px;
+}
+
+header img {
+  width: 160px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 10px 0 20px;
+}
+
+header p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* TIMELINE */
+section {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding: 60px 40px;
+}
+
+/* TIMELINE CARDS */
+section > div {
+  flex: 0 0 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border-top: 6px solid #0071c5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  /* Makes hover animation smooth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT */
+section > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: #0071c5;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+section h3 {
+  font-size: 22px;
+}
+
+section p {
+  line-height: 1.6;
+}
+
+/* BOTTOM MESSAGE */
+body > p {
+  text-align: center;
+  padding: 25px;
+  background: #0071c5;
+  color: white;
+  margin: 0;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 700px) {
+
+  header {
+    padding: 60px 20px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  section > div {
+    width: 100%;
+  }
+}
